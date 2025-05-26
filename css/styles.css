@@ -1,0 +1,27 @@
+.gallery {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery__item {
+  flex-basis: calc((100% - 48px) / 3);
+  box-sizing: border-box;
+}
+
+.gallery__image {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery__image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
